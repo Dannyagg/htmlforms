@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        label {
+            display: block;
+            width: 100%;
+            margin: 16px 0;
+
+        }
+
+        textarea {
+            vertical-align: top;
+            margin-left: 2px;
+           
+        }
+
+    </style>
+</head>
+<body>
+    <form> 
+        <fieldset> 
+            <legend> User Registration</legend>
+            <label> Your Name
+                <input type="text" name="username" placeholder="Enter your name"/>
+            </label> 
+            
+            <label>Your Email Address
+                    <input type="email" name=" user-email" placeholder="Please enter your email" required/>
+            </label>
+
+            <label> Your Password
+                <input type="password" placeholder="Enter your password"required/>
+            </label>    
+
+
+            <label> Verify Password
+                <input type="password" placeholder="Enter your password"required/>
+            </label>   
+            <button type="submit">Register</button>
+
+        </fieldset>
+    </form>
+    
+    <form> 
+        <fieldset> 
+            <legend> User Login</legend>
+                <label> Your Email Address
+                    <input type="text" name="login-email" placeholder="What is your login email address"/>
+                </label> 
+                    <label> Your Password
+                    <input type="password" name=" login-password" placeholder="please enter your password"/>  
+                </label>
+                    <button type="submit">Login</button>
+
+        </fieldset>
+    </form>
+
+            <form> 
+                    <fieldset> 
+                        <legend> School Affiliation </legend>
+                        
+                        <label> First Name
+                            <input type="text" name="user-first-name" placeholder="Please enter your first name"/>
+                        </label> 
+                        <label> Last Name
+                            <input type="text" name="user-last-name" placeholder="Please enter your last name"/>
+                        </label> 
+                        
+                        <label> School Name
+                            <input type="text" name=" user-school-name" placeholder="Please enter your school name"/>  
+                        </label>
+                            <button type="submit">Submit</button>
+
+                    </fieldset>
+                </form>
+
+            <form> 
+                    <fieldset> 
+                        <legend> Do you like algorithms </legend>
+                        <label> 
+                            <input type="radio" id= "yes" name="question" value=" yes" checked/>Yes
+                        </label> 
+                        <label> 
+                            <input type="radio" id= "no" name="question" value=" no" />No
+                        </label> 
+
+                    </fieldset>
+            </form>    
+
+            <form> 
+
+                    <fieldset>
+                        <legend> Drop Down - Choose Favorite Sports</legend>
+                        <label for="sport-select"> What is your favorite sport? </label>
+                            <select name="choice" id="sport-select">                  
+                            
+                                <option value="" disabled selected>--Please choose an option--</option>
+                                <option value="basketball">Basketball</option>
+                                <option value="soccer">Soccer</option>
+                                <option value="hockey">Hockey</option>
+                                <option value="baseball">Baseball</option>
+                                <option value="tennis">Tennis</option>
+                                <option value="paintball">Paintball</option>
+                        
+                            </select>
+                   </fieldset>
+            </form>
+
+
+            <form> 
+                    
+                <fieldset> 
+                    <legend> User Registration- Testing Validation</legend>
+                        <label> Your Name
+                        <input type="text" name="username" placeholder="Enter your name" required/>
+                    </label> 
+                         <button type="submit">Submit</button>
+                </fieldset>
+            </form>    
+
+            <form> 
+                    
+                <fieldset> 
+                    <legend> User age- Testing Number Range  Validation</legend>
+                        <label> Your Age
+                            <input type="number" id="user-age" name="user-age" placeholder="Age" min="0" max="100" required/>
+                        </label> 
+                            <button type="submit">Submit</button>
+                </fieldset>
+            </form>    
+
+            <form> 
+                <fieldset> 
+                    <legend> Sign Up Form</legend>
+                    
+                    <label> Your Name
+                        <input type="text" name="username" placeholder="Enter your name" pattern="[A-Za-z]{5,100}"
+                        title="Name input must be a minimum of five letters" required/>
+                    </label> 
+
+                    <label> Your Password
+                        <input type="password" placeholder="Enter your password"pattern="[A-Za-z0-9]{5,15}"
+                        required/>
+                    </label> 
+                    
+                    <label>Your Email Address
+                            <input type="email" name=" user-email" placeholder="Please enter your email"/>
+                    </label>
+                
+                    <label>About me
+
+                            <textarea id = "user-bio" name ="user-bio" rows="6" cols="50" placeholder="Please tell us about yourself" pattern="[A-Za-z0-9]{0,250}"></textarea> 
+                    </label>
+                    
+                    <button type="submit">SignUp</button>
+
+                </fieldset>
+            </form>
+
+            <form> 
+                    
+                <fieldset> 
+                    <legend> Are you a robot?</legend>
+                       
+                        <label for="robot-check"> Please Type: <strong> I am not a robot!</strong></label>
+                            <input id="robot-check" type="text" pattern="I am not a robot!"/>
+                        </label> 
+                            <button type="submit">Submit</button>
+                </fieldset>
+            </form>    
+</body>
+</html>
